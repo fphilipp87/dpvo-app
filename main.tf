@@ -6,7 +6,7 @@ provider "aws" {
   version = "~> 3.0"
   region                  = "eu-central-1"
  # shared_credentials_file = "~/.aws/credentials"
-  profile                 = "workshop_dpvo_user"
+  profile                 = "terraform_user"
 }
 
 terraform {
