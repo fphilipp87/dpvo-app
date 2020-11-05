@@ -11,17 +11,17 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket = "test-app-dpvo-terraform-state-dev"
+    bucket = "test-app-terraform-state-dev"
     key    = "terraform.tfstate"
     region = "eu-central-1"
-    profile = "workshop_dpvo_user"
+    profile = "terraform_user"
   }
 }
 
 module "ecs_app" {
-  source = "git@github.com:freenet-group/ecs-tf-module.git?ref=v0.2.8-dev"
+  source = "git@github.com:ElioLopez/ecs-tf-module.git?ref=v0.0.1-dev"
 
-  app_name      = "test-app-dpvo"
+  app_name      = "test-app"
   region        = "eu-central-1"
   environment   = "dev"
 
