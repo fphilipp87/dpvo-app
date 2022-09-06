@@ -5,7 +5,7 @@ spring:
             ddl-auto: validate
 
     datasource:
-        url: jdbc:mysql://test-app-dpvo-dev.cxfytuiyplor.eu-central-1.rds.amazonaws.com:3306/demo
+        url: jdbc:mysql://workshop-db.cfb0am3l3tt7.eu-central-1.rds.amazonaws.com
         username: demo_user
         password: demo_pass
         driver-class-name: com.mysql.jdbc.Driver
