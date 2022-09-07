@@ -19,7 +19,7 @@ terraform {
 }
 
 module "ecs_app" {
-  source = "git@github.com:ElioLopez/ecs-tf-module.git"
+  source = "git@github.com:fphilipp87/ecs-tf-module.git"
 
   app_name      = "test-app"
   region        = "eu-central-1"
