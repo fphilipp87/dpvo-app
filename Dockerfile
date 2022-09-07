@@ -1,4 +1,4 @@
-FROM java:8
+FROM docker.io/library/openjdk:8
 VOLUME /tmp
 ADD target/demo.jar demo.jar
 RUN bash -c 'touch /demo.jar'

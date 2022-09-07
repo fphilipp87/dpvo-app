@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM java:8
 VOLUME /tmp
 ADD demo.jar demo.jar
 RUN bash -c 'touch /demo.jar'
