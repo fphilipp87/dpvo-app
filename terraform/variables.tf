@@ -7,3 +7,4 @@ variable "cluster_name" {
   description = "Name of Docker image"
   type        = string
 }
+
