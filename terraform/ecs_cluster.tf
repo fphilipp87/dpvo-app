@@ -1,3 +1,3 @@
 resource "aws_ecs_cluster" "main" {
-  name = var.cluster_name # Naming the cluster
+  name = dpvo-app # Naming the cluster
 }
