@@ -1,6 +1,6 @@
 resource "aws_ecs_service" "service-bluegreen" {
   name            = "service-bluegreen"      # Naming our first service
-  cluster         = dpvo-app         # Referencing our created Cluster
+  cluster         = "dpvo-app"         # Referencing our created Cluster
   task_definition = aws_ecs_task_definition.workshop_app_task.arn  # Referencing the task our service will spin up
   launch_type     = "FARGATE"
   desired_count   = 1 # Setting the number of containers we want deployed to 1
