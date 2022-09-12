@@ -3,7 +3,7 @@ resource "aws_ecs_task_definition" "workshop_app_task" {
   container_definitions    = jsonencode([
     {
       "name": "springboot-app",
-      "image": "763265662616.dkr.ecr.eu-central-1.amazonaws.com/dpvo-springboot:323c5e9885b4f5bebad89fe88ffc15e907c93465",
+      "image": "440175892209.dkr.ecr.eu-central-1.amazonaws.com/dpvo-springboot:348352b7bd9184377b2988787ea5afba45634763",
       "logConfiguration": {
          "logDriver": "awslogs",
          "options": {
